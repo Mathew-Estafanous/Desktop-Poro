@@ -23,12 +23,7 @@ public class MainFrame extends JFrame {
         setBackground(new Color(0, 0, 0, 0));
         setAlwaysOnTop(true);
 
-        //setType(Type.UTILITY);
-
-        ImageIcon poroGif = new ImageIcon(this.getClass().getResource("/static/Poro.gif"));
-        poroGif.setImage(poroGif.getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT));
-        JLabel label = new JLabel(poroGif);
-        label.setBounds(668, 43, 500, 476);
-        add(label);
+        Poro poroCharacter = new Poro();
+        add(poroCharacter);
     }
 }
