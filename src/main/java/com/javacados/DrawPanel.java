@@ -7,7 +7,6 @@ public class DrawPanel extends JPanel {
 
     public DrawPanel() {
         setBackground(new Color(0,0,0,0));
-        repaint();
     }
 
     @Override
