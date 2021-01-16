@@ -3,9 +3,9 @@ package com.javacados;
 import javax.swing.*;
 import java.awt.*;
 
-public class MainApp extends JFrame {
+public class MainFrame extends JFrame {
 
-    public MainApp() {
+    public MainFrame() {
         setExtendedState(JFrame.MAXIMIZED_BOTH);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -16,8 +16,6 @@ public class MainApp extends JFrame {
         Icon imgIcon = new ImageIcon(this.getClass().getResource("/static/poro.gif"));
         JLabel label = new JLabel(imgIcon);
         label.setBounds(668, 43, 200, 200);
-        JPanel drawPanel = new DrawPanel();
         add(label);
-        add(drawPanel);
     }
 }
