@@ -3,8 +3,8 @@
 
 ## Table of Contents
 * [About The Project](#About The Project)
-    * [Purpose](Purpose)
-    * [Features](Features)
+    * [Purpose](#Purpose)
+    * [Features](#Features)
     * [Sources](#Sources)
 * [Getting Started](#Getting Started)
 * [License](#License)
