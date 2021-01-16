@@ -11,7 +11,7 @@ import java.io.IOException;
 public class MainFrame extends JFrame {
 
     public MainFrame() {
-        setSize(100, 100);
+        setSize(300, 300);
         Rectangle rect = GraphicsEnvironment
                 .getLocalGraphicsEnvironment()
                 .getDefaultScreenDevice()
@@ -25,7 +25,7 @@ public class MainFrame extends JFrame {
         setUndecorated(true);
         setVisible(true);
 
-        setBackground(new Color(0, 0, 0, 0));
+        setBackground(new Color(0, 0, 0));
         setAlwaysOnTop(true);
 
         //setType(Type.UTILITY);
