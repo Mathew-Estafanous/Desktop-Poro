@@ -12,10 +12,13 @@ public class MainFrame extends JFrame {
         setVisible(true);
 
         setBackground(new Color(0, 0, 0, 0));
+        setAlwaysOnTop(true);
 
-        Icon imgIcon = new ImageIcon(this.getClass().getResource("/static/poro.gif"));
+        //setType(Type.UTILITY);
+
+        Icon imgIcon = new ImageIcon(this.getClass().getResource("/static/Poro.gif"));
         JLabel label = new JLabel(imgIcon);
-        label.setBounds(668, 43, 200, 200);
+        label.setBounds(668, 43, 500, 476);
         add(label);
     }
 }
