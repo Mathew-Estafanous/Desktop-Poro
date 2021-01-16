@@ -13,14 +13,15 @@ public class MainFrame extends JFrame {
                 .getDefaultConfiguration()
                 .getBounds();
 
-        setLocation((int) rect.getMaxX() - this.getWidth() - 80,
-                    (int) rect.getMaxY() - this.getHeight() - 80);
+        setLocation((int) rect.getMaxX() - this.getWidth() - 40,
+                    (int) rect.getMaxY() - this.getHeight() - 40);
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setUndecorated(true);
         setVisible(true);
 
         setBackground(new Color(0, 0, 0, 0));
+        setLayout(null);
         setAlwaysOnTop(true);
 
         Poro poroCharacter = new Poro();

@@ -39,7 +39,6 @@ public class Poro extends JLabel {
                 updatePoroImage("/static/Poro.gif");
             }
         });
-        setBounds(668, 43, 500, 476);
     }
 
     public void updatePoroImage(String poroUrl) {
@@ -47,7 +46,13 @@ public class Poro extends JLabel {
         this.poroGif = new ImageIcon(this.getClass().getResource(poroUrl));
         this.poroGif.setImage(this.poroGif.getImage()
                 .getScaledInstance(poroSize, poroSize, Image.SCALE_DEFAULT));
+        updatePoroLabel();
+    }
+
+    private void updatePoroLabel() {
         setIcon(poroGif);
+        setBounds(150 - poroSize/2, 300 - poroSize, poroSize , poroSize);
+        repaint();
     }
 
     public void growPoro() {
