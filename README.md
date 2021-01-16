@@ -2,11 +2,11 @@
 ##### By: Mathew, Ethan, Olivia, and Eugene
 
 ## Table of Contents
-* [About The Project](#About The Project)
+* [About The Project](#About-The-Project)
     * [Purpose](#Purpose)
     * [Features](#Features)
     * [Sources](#Sources)
-* [Getting Started](#Getting Started)
+* [Getting Started](#Getting-Started)
 * [License](#License)
 * [Contact](#Contact)
 
