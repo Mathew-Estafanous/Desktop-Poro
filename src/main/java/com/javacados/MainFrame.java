@@ -25,7 +25,7 @@ public class MainFrame extends JFrame {
         setUndecorated(true);
         setVisible(true);
 
-        setBackground(new Color(0, 0, 0));
+        setBackground(new Color(0, 0, 0, 0));
         setAlwaysOnTop(true);
 
         //setType(Type.UTILITY);
