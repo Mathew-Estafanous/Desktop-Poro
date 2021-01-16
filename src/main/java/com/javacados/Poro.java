@@ -45,7 +45,7 @@ public class Poro extends JLabel {
 
     public void growPoro() {
         poroSize += GROW_AMOUNT;
-        updatePoroImage("/static/Poro.gif");
+        updatePoroImage(this.gifPath);
         if(this.poroSize > MAX_SIZE) {
             splitPoro();
         }
