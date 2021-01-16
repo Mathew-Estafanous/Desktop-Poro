@@ -10,6 +10,9 @@ public class Poro extends JLabel {
     private ImageIcon poroGif;
     private String gifPath;
 
+    private int poroX = 900;
+    private int poroY = 800;
+
     private int poroSize = 100;
 
     private final int GROW_AMOUNT = 30;
@@ -51,7 +54,7 @@ public class Poro extends JLabel {
 
     private void updatePoroLabel() {
         setIcon(poroGif);
-        setBounds(150 - poroSize/2, 300 - poroSize, poroSize , poroSize);
+        setBounds(poroX - poroSize/2, poroY - poroSize, poroSize , poroSize);
         repaint();
     }
 
