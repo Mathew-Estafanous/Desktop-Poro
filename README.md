@@ -14,7 +14,7 @@
 Introducing a desktop **poro** that you can watch and interact with! :bone:
 
 <p align="center">
-   <img src="https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro-Eat.gif" alt="Animated Poro" width="200px">
+   <img src="https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro-Eat.gif" alt="Animated Poro Eating" width="200px">
 </p>
 
 ### Purpose
@@ -103,5 +103,5 @@ Discord: kay#3255
 Discord: Pom#0315
 
 <p align="center">
-   <img src="https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro.gif" alt="Animated Poro-Idle" width="1500px">
+   <img src="https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro-Idle.gif" alt="Animated Poro Idle" width="1500px">
 </p>
