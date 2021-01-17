@@ -87,7 +87,7 @@ Observe and learn from poro! | Watch as he walks across your screen and sends yo
   Getting Started
 </h2>
 
-Download the latest version from [releases](https://github.com/Mathew-Estafanous/Desktop-Pororeleases/latest) and follow the instructions on the page. After downloading, run the ```PoroPet.exe``` file and Poro will appear on your screen! View interactions in [Features](#Features)
+Download the latest version from [releases](https://github.com/Mathew-Estafanous/Desktop-Poro/releases/latest) and follow the instructions on the page. After downloading, run the ```PoroPet.exe``` file and Poro will appear on your screen! View interactions in [Features](#Features)
 
 To close the program, select the Java window in the taskbar and close the window from there.
 
