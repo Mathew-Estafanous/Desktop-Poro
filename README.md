@@ -2,7 +2,9 @@
    Desktop Poro Pet
 </h1>
 
-#### By: Mathew, Ethan, Olivia, and Eugene
+<h4 algin = "right">
+   By: Mathew, Ethan, Olivia, and Eugene
+</h4>
 
 ## Table of Contents
 * [About The Project](#About-The-Project)
