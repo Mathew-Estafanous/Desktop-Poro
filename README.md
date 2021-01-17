@@ -67,6 +67,11 @@ This is a fun project we decided to create to bring a smile to people, especiall
 these lonely times in quarantine. We hope you enjoy!
 
 ### Features
+
+Behaviour | Information
+--------- | -----------
+<p align="center"><img src="https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro-Idle.gif" alt="Animated Poro Eating" width="200px">Poro Idling</p> | Your poro will idle!
+
 Interaction | Instructions
 ----------- | ------------
 Feed and grow your poro! | Click your poro. Your friend will grow with every click!
