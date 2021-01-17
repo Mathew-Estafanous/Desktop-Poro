@@ -70,7 +70,10 @@ these lonely times in quarantine. We hope you enjoy!
 
 Behaviour | Information
 --------- | -----------
-<p align="center"><img src="https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro-Idle.gif" alt="Animated Poro Eating" width="200px">Poro Idling</p> | Your poro will idle!
+<img src="https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro-Idle.gif" alt="Animated Poro Idling" width="200px">  Poro Idling | Your poro will idle!
+<img src="https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro-Eating.gif" alt="Animated Poro Eating" width="200px">  Poro Eating | Your poro 
+<img src="https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro-Walk-Left.gif" alt="Animated Poro Walking Left" width="200px">  Poro Walking Left | Your poro will turn left and walk!
+<img src="https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro-Walk-Right.gif" alt="Animated Poro Right" width="200px">  Poro Walking Right | Your poro will turn right and walk!
 
 Interaction | Instructions
 ----------- | ------------
@@ -79,11 +82,12 @@ Split your poro! | If you click your poro once it grows to a certain size, it wi
 Drag your poro! | Hold your mouse on your poro and move your cursor around!
 Drop your poro and watch it bounce! | Release your mouse while holding your poro in the air!
 
-
-<h2 align = "center"> 
-   Getting Started
+<h2 align = "center">
+  Getting Started
 </h2>
-Steps to be written
+1. Download the program from: ....
+2. Run the "Poro-Pet.exe file
+3. Poro should appear on your screen! View interactions in [Features](#Features)
 
 <h2 align = "center">
    License
