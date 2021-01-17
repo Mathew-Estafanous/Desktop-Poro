@@ -80,7 +80,7 @@ public class Poro extends JLabel implements ActionListener {
                 if(poroY + currentSize < FLOOR) {
                     System.out.println("FALLING");
                     currentState = PoroState.Falling;
-                    updatePoroImage(PORO_FALLING);
+                    updatePoroImage(PORO_IN_AIR);
                 } else {
                     currentState = PoroState.Idling;
                     updatePoroImage(PORO_IDLE);
@@ -97,7 +97,7 @@ public class Poro extends JLabel implements ActionListener {
                 int mouseY = e.getY();
                 poroX += mouseX - currentSize / 2;
                 poroY += mouseY - currentSize / 2;
-                updatePoroLabel();
+                updatePoroImage(PORO_IN_AIR);
             }
         });
     }
