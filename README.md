@@ -45,7 +45,7 @@ developing lifelong relationships with people. As social creatures, humans crave
 interactions—it is the base upon which we function.
 
 <p align = "center">
-   <img src = "https://i.ytimg.com/vi/L2cTVq0zkE4/maxresdefault.jpg" width = "400px">
+   <img src = "https://i.ytimg.com/vi/L2cTVq0zkE4/maxresdefault.jpg" height = "400px">
    <img src = "https://media.pocketgamer.com/artwork/na-jqz/petz1_gif_jpgcopy.jpg" height = "400px">
 </p>
 
