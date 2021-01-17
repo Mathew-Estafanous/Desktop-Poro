@@ -2,10 +2,7 @@ package com.javacados;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+import java.awt.event.*;
 import java.util.Random;
 
 public class Poro extends JLabel implements ActionListener {
@@ -64,6 +61,18 @@ public class Poro extends JLabel implements ActionListener {
             public void mouseExited(MouseEvent e) {
                 currentState = PoroState.Idling;
                 updatePoroImage("/static/Poro-Idle.gif");
+            }
+        });
+
+        this.addMouseMotionListener(new MouseMotionAdapter() {
+            @Override
+            public void mouseDragged(MouseEvent e) {
+                currentState = PoroState.Dragged;
+                int mouseX = e.getX();
+                int mouseY = e.getY();
+                poroX += mouseX - currentSize / 2;
+                poroY += mouseY - currentSize / 2;
+                updatePoroLabel();
             }
         });
     }
@@ -136,6 +145,9 @@ public class Poro extends JLabel implements ActionListener {
         System.out.println(currentState);
         if(currentState == PoroState.Eating)
             return;
+        else if (currentState == PoroState.Dragged) {
+            return;
+        }
         else if(currentState == PoroState.Walking) {
             walkTowardsPoint();
             return;
