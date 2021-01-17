@@ -21,7 +21,7 @@
 <h2 align = "center">
    About The Project
 </h2>
-Introducing a desktop **poro** that you can watch and interact with! :bone:
+Introducing a desktop poro that you can watch and interact with! :bone:
 
 <p align="center">
    <img src="https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro-Eat.gif" alt="Animated Poro Eating" width="200px">
@@ -82,6 +82,7 @@ Feed and grow your poro! | Click your poro. Your friend will grow with every cli
 Split your poro! | If you click your poro once it grows to a certain size, it will explode into multiple poros... but don't worry! Your poro will still be around,though reverted to its original size!
 Drag your poro! | Hold your mouse on your poro and move your cursor around!
 Drop your poro and watch it bounce! | Release your mouse while holding your poro in the air!
+Observe and learn from poro! | Watch as he moves across your screen and sends you messages!
 
 <h2 align = "center">
   Getting Started
@@ -90,7 +91,7 @@ Drop your poro and watch it bounce! | Release your mouse while holding your poro
 2. Run the "Poro-Pet.exe file
 3. Poro should appear on your screen! View interactions in [Features](#Features)
 
-* If there are any issues, please [contact us](#Contributors) for troubleshooting!
+If there are any issues, please [contact us](#Contributors) for troubleshooting!
 
 <h2 align = "center">
    License
@@ -120,6 +121,8 @@ Email: ethan@tower10labs.com
 Discord: Th33Ahn#3297
 
 <ins>**Olivia**</ins>
+
+Email: zhouoliviam@gmail.com
 
 Discord: kay#3255
 
