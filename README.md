@@ -1,4 +1,7 @@
-# Desktop Poro Pet
+<h1 align = "center">
+   Desktop Poro Pet
+</h1>
+
 #### By: Mathew, Ethan, Olivia, and Eugene
 
 ## Table of Contents
