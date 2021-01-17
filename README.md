@@ -85,7 +85,9 @@ Steps to be written
 <h2 align = "center">
    License
 </h2>
-Someone fill this in for me please... MATHEW
+
+This project is Unlicensed and is free to be used! See [LICENSE](LICENSE.md) or <http://unlicense.org> for 
+more detailed information.
 
 <h2 align = "center">
    Contact
