@@ -15,7 +15,7 @@ public class Poro extends JLabel implements ActionListener {
     private PoroState currentState;
     private int walkEndpoint = 100;
     private int walkDirection = 0;
-    private int walkSpeed = 10;
+    private int walkSpeed = 5;
 
     private int poroX = 900;
     private int poroY = 800;
@@ -25,8 +25,9 @@ public class Poro extends JLabel implements ActionListener {
     private final int GROW_AMOUNT = 30;
     private final int STARTING_SIZE = 100;
     private final int MAX_SIZE = 300;
+
     private final Random rand = new Random();
-    private final Timer timer = new Timer(10000, this);
+    private final Timer timer = new Timer(8000, this);
     private final Rectangle rect;
 
     public Poro() {
@@ -101,9 +102,11 @@ public class Poro extends JLabel implements ActionListener {
         if(walkEndpoint < poroX && walkDirection > 0) {
             System.out.println("DONE WALKING");
             currentState = PoroState.Idling;
+            this.timer.setDelay(8000);
         } else if(walkEndpoint > poroX && walkDirection < 0) {
             System.out.println("DONE WALKING");
             currentState = PoroState.Idling;
+            this.timer.setDelay(8000);
         }
     }
 
@@ -124,22 +127,21 @@ public class Poro extends JLabel implements ActionListener {
             updatePoroImage("/static/Poro.gif");
             walkDirection = 1;
         }
-        this.timer.start();
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        System.out.println(currentState);
         if(currentState == PoroState.Eating)
             return;
         else if(currentState == PoroState.Walking) {
-            System.out.println("Test");
             walkTowardsPoint();
+            return;
         }
 
-        final int choice = 2; //rand.nextInt(10);
-        if(choice < 3) {
-            this.timer.stop();
-            this.timer.setDelay(500);
+        final int choice = rand.nextInt(10);
+        if(choice < 4) {
+            this.timer.setDelay(200);
             startWalkingSequence();
         }
     }
