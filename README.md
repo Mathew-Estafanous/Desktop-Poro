@@ -85,11 +85,13 @@ Drop your poro and watch it bounce! | Release your mouse while holding your poro
 <h2 align = "center">
   Getting Started
 </h2>
-1. Download the program from: ....
-2. Run the "Poro-Pet.exe file
-3. Poro should appear on your screen! View interactions in [Features](#Features)
+1. Download the program from [here](https://github.com/Mathew-Estafanous/Desktop-Poro)
 
-* If there are any issues, please [contact us](#Contributors) for troubleshooting!
+2. Run the Poro-Pet.exe file
+
+3. Poro will appear on your screen! View interactions in [Features](#Features)
+
+If there are any issues, please [contact us](#Contributors) for troubleshooting!
 
 <h2 align = "center">
    License
