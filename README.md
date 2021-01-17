@@ -13,7 +13,13 @@
 ## About The Project
 Introducing a desktop **poro** that you can watch and interact with! :bone:
 
+<<<<<<< Updated upstream
 ![Poro Gif](/static/Poro.gif)
+=======
+<p align="center">
+   <img src="https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro.gif" alt="Animated Poro" width="200px">
+</p>
+>>>>>>> Stashed changes
 
 ### Purpose
 
@@ -38,10 +44,26 @@ developing relationships with people. As social creatures, humans crave interact
 the base upon which we function.
 
 It's always nice to have someone accompany you in front of your computer even as you're 
+<<<<<<< Updated upstream
 rushing to complete an assignment by the deadline or watching... educational videos.
 What's even cooler is being able to witness that someone grow with you throughout time and
 develop a bond with you!
 
+=======
+rushing to complete an assignment by the deadline or bingeing Youtube and Netflix videos.
+What's even cooler is being able to witness that someone grow with you throughout time and
+develop a bond with you!
+
+Not to mention children would **absolutely** love to have a companion on their computer
+screen! This is a fun way to bring the magic of programming to them! By having a fluffy
+creature living on their computer screen, they would feel like the *coolest* kid on the 
+planet! We bet you they would.
+
+<p align="center">
+   <img src="https://media.chatterblock.com/files/contentitem_images/9-websites-for-teaching-children-coding-skills-1668-1b3cf6.jpg" width = "500px">
+</p>
+
+>>>>>>> Stashed changes
 This is a fun project we decided to create to bring a smile to people, especially during 
 these lonely times in quarantine. We hope you enjoy!
 
@@ -84,3 +106,7 @@ Discord: kay#3255
 #### Eugene
 
 Discord: Pom#0315
+
+<p align="center">
+   <img src="https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro.gif" alt="Animated Poro" width="1500px">
+</p>
