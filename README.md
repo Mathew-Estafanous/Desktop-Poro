@@ -72,15 +72,15 @@ these lonely times in quarantine. We hope you enjoy!
 Behaviour | Information | Visual
 --------- | ----------- | ------
 **Poro Idling** | Your poro will generally be idling. | <img src="https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro-Idle.gif" alt="Animated Poro Idling" width="100px">
-**Poro Eating** | Your poro will act as if it's eating if your cursor is hovering over it. | <img src="https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro-Eat.gif" alt="Animated Poro Eating" width="100px">
+**Poro Eating** | Your poro will act as if he's eating if your cursor is hovering over him. | <img src="https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro-Eat.gif" alt="Animated Poro Eating" width="100px">
 **Poro Walking** | There is a 3% chance per second for your poro to turn either left or right and start walking! | <img src="https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro-Walk-Left.gif" alt="Animated Poro Walking Left" width="100px">  <img src="https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro-Walk-Right.gif" alt="Animated Poro Walking Right" width="100px">
 
 Interaction | Instructions
 ----------- | ------------
 Feed and grow your poro! | Click your poro. Your friend will grow with every click!
-Split your poro! | If you click your poro once it grows to a certain size, it will explode into multiple poros... but don't worry! Your poro will still be around, though reverted to its original size!
+Split your poro! | If you click your poro once he grows to a certain size, he will explode into multiple poros... but don't worry! Your poro will still be around, though reverted to his original size!
 Drag your poro! | Hold your mouse on your poro and move your cursor around!
-Drop your poro and watch it bounce! | Release your mouse while holding your poro in the air!
+Drop your poro and watch him bounce! | Release your mouse while holding your poro in the air!
 
 <h2 align = "center">
   Getting Started
