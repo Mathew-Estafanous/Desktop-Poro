@@ -178,7 +178,7 @@ public class Poro extends JLabel implements ActionListener {
         poroY += velY;
         if(poroY > FLOOR) {
             poroY = FLOOR;
-            if (velY >= 30) {
+            if (velY >= 15) {
                 updatePoroImage(PORO_LAND);
                 velY *= -0.85;
             } else {
