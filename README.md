@@ -39,6 +39,10 @@ enough, whether we are taking care of family members, working on a project with 
 developing lifelong relationships with people. As social creatures, humans crave 
 interactions—it is the base upon which we function.
 
+<p align = "center">
+   <img src = "https://i.ytimg.com/vi/L2cTVq0zkE4/maxresdefault.jpg" width = "500px">
+</p>
+
 It's always nice to have someone accompany you in front of your computer even as you're 
 rushing to complete an assignment by the deadline or bingeing Youtube and Netflix videos.
 What's even cooler is being able to witness that someone grow with you throughout time and
