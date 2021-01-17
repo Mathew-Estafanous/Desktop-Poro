@@ -13,7 +13,7 @@
 ## About The Project
 Introducing a desktop **poro** that you can watch and interact with! :bone:
 
-![Poro Gif](https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro.gif)
+<img src="https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro.gif" alt="Animated Poro" text-align="center">
 
 ### Purpose
 
