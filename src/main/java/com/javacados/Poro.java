@@ -22,7 +22,7 @@ public class Poro extends JLabel implements ActionListener {
 
     private int currentSize = 100;
 
-    private final int FLOOR = 800;
+    private final int FLOOR;
     private final int GROW_AMOUNT = 30;
     private final int STARTING_SIZE = 100;
     private final int MAX_SIZE = 300;
@@ -43,6 +43,7 @@ public class Poro extends JLabel implements ActionListener {
                 .getDefaultConfiguration()
                 .getBounds();
 
+        FLOOR = (int) rect.getMaxY() - currentSize;
         updatePoroImage(poroUrl);
         addMouseEventListener();
         this.timer.start();
@@ -92,12 +93,14 @@ public class Poro extends JLabel implements ActionListener {
         this.addMouseMotionListener(new MouseMotionAdapter() {
             @Override
             public void mouseDragged(MouseEvent e) {
+                if(currentState != PoroState.Dragged)
+                    updatePoroImage(PORO_IN_AIR);
                 currentState = PoroState.Dragged;
                 int mouseX = e.getX();
                 int mouseY = e.getY();
                 poroX += mouseX - currentSize / 3;
                 poroY += mouseY - 10;
-                updatePoroImage(PORO_IN_AIR);
+                updatePoroLabel();
             }
         });
     }
@@ -176,7 +179,6 @@ public class Poro extends JLabel implements ActionListener {
             updatePoroImage(PORO_IDLE);
             return;
         }
-        //TODO: Change to falling animation when possible
         updatePoroLabel();
     }
 
