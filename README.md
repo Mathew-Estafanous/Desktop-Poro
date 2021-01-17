@@ -1,5 +1,5 @@
 # Desktop Poro Pet
-##### By: Mathew, Ethan, Olivia, and Eugene
+#### By: Mathew, Ethan, Olivia, and Eugene
 
 ## Table of Contents
 * [About The Project](#About-The-Project)
@@ -34,13 +34,18 @@ to keep you company?
 Research has shown that virtual pets are able to promote learning, collaboration, and 
 empathy among users. The importance of these skills in our daily lives cannot be stressed 
 enough, whether we are taking care of family members, working on a project with others, or 
-developing relationships with people. As social creatures, humans crave interactions—it is
-the base upon which we function.
+developing lifelong relationships with people. As social creatures, humans crave 
+interactions—it is the base upon which we function.
 
 It's always nice to have someone accompany you in front of your computer even as you're 
-rushing to complete an assignment by the deadline or watching... educational videos.
+rushing to complete an assignment by the deadline or binging Youtube and Netflix videos.
 What's even cooler is being able to witness that someone grow with you throughout time and
 develop a bond with you!
+
+Not to mention children would **absolutely** love to have a companion on their computer
+screen! This is a fun way to bring the magic of programming to them! By having a fluffy
+creature living on their computer screen, they would feel like the *coolest* kid on the 
+planet! We bet you they would.
 
 This is a fun project we decided to create to bring a smile to people, especially during 
 these lonely times in quarantine. We hope you enjoy!
@@ -67,20 +72,20 @@ Someone fill this in for me please... MATHEW
 
 ### Contributors
 
-#### Mathew
+<ins>**Mathew**</ins>
 
 Email: mathewestafanous13@gmail.com
 
 Discord: Mathew E#1646
 
-#### Ethan
+<ins>**Ethan**</ins>
 
 Discord: Th33Ahn#3297
 
-#### Olivia
+<ins>**Olivia**</ins>
 
 Discord: kay#3255
 
-#### Eugene
+<ins>**Eugene**</ins>
 
 Discord: Pom#0315
