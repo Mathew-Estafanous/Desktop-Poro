@@ -53,10 +53,6 @@ screen! This is a fun way to bring the magic of programming to them! By having a
 creature living on their computer screen, they would feel like the *coolest* kid on the 
 planet! We bet you they would.
 
-<p align="center">
-   <img src="https://media.chatterblock.com/files/contentitem_images/9-websites-for-teaching-children-coding-skills-1668-1b3cf6.jpg" width = "500px">
-</p>
-
 This is a fun project we decided to create to bring a smile to people, especially during 
 these lonely times in quarantine. We hope you enjoy!
 
