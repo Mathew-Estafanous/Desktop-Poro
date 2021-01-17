@@ -1,5 +1,10 @@
-# Desktop Poro Pet
-#### By: Mathew, Ethan, Olivia, and Eugene
+<h1 align = "center">
+   Desktop Poro Pet
+</h1>
+
+<h4 align = "right">
+   By: Mathew, Ethan, Olivia, and Eugene
+</h4>
 
 ## Table of Contents
 * [About The Project](#About-The-Project)
@@ -14,7 +19,7 @@
 Introducing a desktop **poro** that you can watch and interact with! :bone:
 
 <p align="center">
-   <img src="https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro.gif" alt="Animated Poro" width="200px">
+   <img src="https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro-Eat.gif" alt="Animated Poro Eating" width="200px">
 </p>
 
 ### Purpose
@@ -40,7 +45,8 @@ developing lifelong relationships with people. As social creatures, humans crave
 interactions—it is the base upon which we function.
 
 <p align = "center">
-   <img src = "https://i.ytimg.com/vi/L2cTVq0zkE4/maxresdefault.jpg" width = "500px">
+   <img src = "https://i.ytimg.com/vi/L2cTVq0zkE4/maxresdefault.jpg" height = "300px">
+   <img src = "https://media.pocketgamer.com/artwork/na-jqz/petz1_gif_jpgcopy.jpg" height = "300px">
 </p>
 
 It's always nice to have someone accompany you in front of your computer even as you're 
@@ -52,10 +58,6 @@ Not to mention children would **absolutely** love to have a companion on their c
 screen! This is a fun way to bring the magic of programming to them! By having a fluffy
 creature living on their computer screen, they would feel like the *coolest* kid on the 
 planet! We bet you they would.
-
-<p align="center">
-   <img src="https://media.chatterblock.com/files/contentitem_images/9-websites-for-teaching-children-coding-skills-1668-1b3cf6.jpg" width = "500px">
-</p>
 
 This is a fun project we decided to create to bring a smile to people, especially during 
 these lonely times in quarantine. We hope you enjoy!
@@ -90,6 +92,8 @@ Discord: Mathew E#1646
 
 <ins>**Ethan**</ins>
 
+Email: ethan@tower10labs.com
+
 Discord: Th33Ahn#3297
 
 <ins>**Olivia**</ins>
@@ -101,5 +105,5 @@ Discord: kay#3255
 Discord: Pom#0315
 
 <p align="center">
-   <img src="https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro.gif" alt="Animated Poro" width="1500px">
+   <img src="https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro-Idle.gif" alt="Animated Poro Idle" width="1500px">
 </p>
