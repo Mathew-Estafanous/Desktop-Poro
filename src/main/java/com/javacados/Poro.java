@@ -194,7 +194,6 @@ public class Poro extends JLabel implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         switch (currentState) {
             case Eating:
-                return;
             case Dragged:
                 return;
             case Falling:
