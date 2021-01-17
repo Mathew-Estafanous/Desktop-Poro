@@ -93,7 +93,7 @@ Poro should appear on your screen! View interactions in [Features](#Features)
 
 To close the program, select the Java window in the taskbar and close the window from there.
 
-* If there are any issues, please [contact us](#Contributors) for troubleshooting!
+**If there are any issues, please [contact us](#Contributors) for troubleshooting!**
 
 <h2 align = "center">
    License
