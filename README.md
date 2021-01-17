@@ -16,6 +16,7 @@
 * [Getting Started](#Getting-Started)
 * [License](#License)
 * [Contact](#Contact)
+   * [Contributors](#Contributors)
 
 <h2 align = "center">
    About The Project
@@ -70,10 +71,10 @@ these lonely times in quarantine. We hope you enjoy!
 
 Behaviour | Information
 --------- | -----------
-<img src="https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro-Idle.gif" alt="Animated Poro Idling" width="200px">  Poro Idling | Your poro will idle!
-<img src="https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro-Eating.gif" alt="Animated Poro Eating" width="200px">  Poro Eating | Your poro 
-<img src="https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro-Walk-Left.gif" alt="Animated Poro Walking Left" width="200px">  Poro Walking Left | Your poro will turn left and walk!
-<img src="https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro-Walk-Right.gif" alt="Animated Poro Right" width="200px">  Poro Walking Right | Your poro will turn right and walk!
+<img src="https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro-Idle.gif" alt="Animated Poro Idling" width="100px">  Poro Idling | Your poro will idle!
+<img src="https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro-Eat.gif" alt="Animated Poro Eating" width="100px">  Poro Eating | Your poro 
+<img src="https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro-Walk-Left.gif" alt="Animated Poro Walking Left" width="100px">  Poro Walking Left | Your poro will turn left and walk!
+<img src="https://github.com/Mathew-Estafanous/Desktop-Poro/blob/main/src/main/resources/static/Poro-Walk-Right.gif" alt="Animated Poro Walking Right" width="100px">  Poro Walking Right | Your poro will turn right and walk!
 
 Interaction | Instructions
 ----------- | ------------
@@ -88,6 +89,8 @@ Drop your poro and watch it bounce! | Release your mouse while holding your poro
 1. Download the program from: ....
 2. Run the "Poro-Pet.exe file
 3. Poro should appear on your screen! View interactions in [Features](#Features)
+
+* If there are any issues, please [contact us](#Contributors) for troubleshooting!
 
 <h2 align = "center">
    License
