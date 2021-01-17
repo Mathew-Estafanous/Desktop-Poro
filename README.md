@@ -40,7 +40,7 @@ developing lifelong relationships with people. As social creatures, humans crave
 interactions—it is the base upon which we function.
 
 It's always nice to have someone accompany you in front of your computer even as you're 
-rushing to complete an assignment by the deadline or binging Youtube and Netflix videos.
+rushing to complete an assignment by the deadline or bingeing Youtube and Netflix videos.
 What's even cooler is being able to witness that someone grow with you throughout time and
 develop a bond with you!
 
