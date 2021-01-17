@@ -179,6 +179,7 @@ public class Poro extends JLabel implements ActionListener {
         if(poroY > FLOOR) {
             poroY = FLOOR;
             if (velY >= 30) {
+                updatePoroImage(PORO_LAND);
                 velY *= -0.85;
             } else {
                 velY = 0;
@@ -195,6 +196,7 @@ public class Poro extends JLabel implements ActionListener {
         switch (currentState) {
             case Eating:
             case Dragged:
+                velY = 0;
                 return;
             case Falling:
                 fallFromGravity();
