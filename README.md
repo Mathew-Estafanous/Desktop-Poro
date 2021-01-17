@@ -2,7 +2,7 @@
    Desktop Poro Pet
 </h1>
 
-<h4 algin = "right">
+<h4 align = "right">
    By: Mathew, Ethan, Olivia, and Eugene
 </h4>
 
