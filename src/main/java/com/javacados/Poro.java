@@ -14,8 +14,8 @@ public class Poro extends JLabel implements ActionListener {
     private int walkEndpoint = 100;
     private int walkDirection = 0;
     private boolean hasPointedInDirection = false;
-    private final int WALK_SPEED = 5;
-    private final int GRAVITY = 5;
+    private final int WALK_SPEED = 2;
+    private final int GRAVITY = 3;
 
     private int poroX = 900;
     private int poroY = 800;
@@ -30,7 +30,7 @@ public class Poro extends JLabel implements ActionListener {
     private final int MAX_SIZE = 300;
 
     private final Random rand = new Random();
-    private final Timer timer = new Timer(100, this);
+    private final Timer timer = new Timer(30, this);
     private final Rectangle rect;
 
     public Poro() {
@@ -204,7 +204,7 @@ public class Poro extends JLabel implements ActionListener {
                 return;
         }
 
-        final int choice = rand.nextInt(30);
+        final int choice = rand.nextInt(90);
         if(choice < 1) {
             startWalkingSequence();
         }
