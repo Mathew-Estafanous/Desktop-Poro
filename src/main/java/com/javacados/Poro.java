@@ -15,10 +15,12 @@ public class Poro extends JLabel implements ActionListener {
     private int walkDirection = 0;
     private boolean hasPointedInDirection = false;
     private final int WALK_SPEED = 5;
-    private final int GRAVITY = 10;
+    private final int GRAVITY = 5;
 
     private int poroX = 900;
     private int poroY = 800;
+
+    private int velY = 0;
 
     private int currentSize = 100;
 
@@ -172,12 +174,18 @@ public class Poro extends JLabel implements ActionListener {
     }
 
     private void fallFromGravity() {
-        poroY += GRAVITY;
+        velY += GRAVITY;
+        poroY += velY;
         if(poroY > FLOOR) {
             poroY = FLOOR;
-            currentState = PoroState.Idling;
-            updatePoroImage(PORO_IDLE);
-            return;
+            if (velY >= 30) {
+                velY *= -0.85;
+            } else {
+                velY = 0;
+                currentState = PoroState.Idling;
+                updatePoroImage(PORO_IDLE);
+                return;
+            }
         }
         updatePoroLabel();
     }
