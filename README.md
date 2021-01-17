@@ -6,7 +6,10 @@
    By: Mathew, Ethan, Olivia, and Eugene
 </h4>
 
-## Table of Contents
+<h2 align = "center">
+   Table of Contents
+</h2>
+
 * [About The Project](#About-The-Project)
     * [Purpose](#Purpose)
     * [Features](#Features)
@@ -15,7 +18,9 @@
 * [License](#License)
 * [Contact](#Contact)
 
-## About The Project
+<h2 align = "center">
+   About The Project
+</h2>
 Introducing a desktop **poro** that you can watch and interact with! :bone:
 
 <p align="center">
@@ -72,13 +77,19 @@ Grow your poro! |
 ### Sources
 https://www.researchgate.net/publication/320743787_Beyond_cute_exploring_user_types_and_design_opportunities_of_virtual_reality_pet_games
 
-## Getting Started
+<h2 align = "center"> 
+   Getting Started
+</h2>
 Steps to be written
 
-## License
+<h2 align = "center">
+   License
+</h2>
 Someone fill this in for me please... MATHEW
 
-## Contact
+<h2 align = "center">
+   Contact
+</h2>
 
 **Project Link** - https://github.com/Mathew-Estafanous/Desktop-Poro
 
