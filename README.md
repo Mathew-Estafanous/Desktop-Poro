@@ -70,8 +70,10 @@ these lonely times in quarantine. We hope you enjoy!
 Interaction | Instructions
 ----------- | ------------
 Feed and grow your poro! | Click your poro. Your friend will grow with every click!
-Split your poro! | If you click your poro once it grows to a certain size, your friend will split into multiple poros and revert to its original size!
+Split your poro! | If you click your poro once it grows to a certain size, it will explode into multiple poros... but don't worry! Your poro will still be around,though reverted to its original size!
 Drag your poro! | Hold your mouse on your poro and move your cursor around!
+Drop your poro and watch it bounce! | Release your mouse while holding your poro in the air!
+
 
 <h2 align = "center"> 
    Getting Started
@@ -110,6 +112,8 @@ Discord: Th33Ahn#3297
 Discord: kay#3255
 
 <ins>**Eugene**</ins>
+
+Email: eugenelee1018@gmail.com
 
 Discord: Pom#0315
 
