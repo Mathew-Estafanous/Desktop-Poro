@@ -95,8 +95,8 @@ public class Poro extends JLabel implements ActionListener {
                 currentState = PoroState.Dragged;
                 int mouseX = e.getX();
                 int mouseY = e.getY();
-                poroX += mouseX - currentSize / 2;
-                poroY += mouseY - currentSize / 2;
+                poroX += mouseX - currentSize / 3;
+                poroY += mouseY - 10;
                 updatePoroImage(PORO_IN_AIR);
             }
         });
