@@ -14,19 +14,21 @@ public class Poro extends JLabel implements ActionListener {
     private int walkEndpoint = 100;
     private int walkDirection = 0;
     private boolean hasPointedInDirection = false;
-    private final int walkSpeed = 5;
+    private final int WALK_SPEED = 5;
+    private final int GRAVITY = 10;
 
     private int poroX = 900;
     private int poroY = 800;
 
     private int currentSize = 100;
 
+    private final int FLOOR = 800;
     private final int GROW_AMOUNT = 30;
     private final int STARTING_SIZE = 100;
     private final int MAX_SIZE = 300;
 
     private final Random rand = new Random();
-    private final Timer timer = new Timer(8000, this);
+    private final Timer timer = new Timer(100, this);
     private final Rectangle rect;
 
     public Poro() {
@@ -50,11 +52,15 @@ public class Poro extends JLabel implements ActionListener {
         this.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
+                if(currentState == PoroState.Falling)
+                    return;
                 growPoro();
             }
 
             @Override
             public void mouseEntered(MouseEvent e) {
+                if(currentState == PoroState.Falling)
+                    return;
                 hasPointedInDirection = false;
                 currentState = PoroState.Eating;
                 updatePoroImage(PORO_EAT);
@@ -62,9 +68,24 @@ public class Poro extends JLabel implements ActionListener {
 
             @Override
             public void mouseExited(MouseEvent e) {
+                if(currentState == PoroState.Falling)
+                    return;
                 hasPointedInDirection = false;
                 currentState = PoroState.Idling;
                 updatePoroImage(PORO_IDLE);
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                if(poroY + currentSize < FLOOR) {
+                    System.out.println("FALLING");
+                    currentState = PoroState.Falling;
+                    updatePoroImage(PORO_FALLING);
+                } else {
+                    currentState = PoroState.Idling;
+                    updatePoroImage(PORO_IDLE);
+                    poroY = FLOOR;
+                }
             }
         });
 
@@ -109,7 +130,7 @@ public class Poro extends JLabel implements ActionListener {
 
     private void walkTowardsPoint() {
         pointPoroInWalkingDirection();
-        poroX += walkSpeed * walkDirection;
+        poroX += WALK_SPEED * walkDirection;
         updatePoroLabel();
 
         //Checking if poro reached their final endpoint
@@ -123,7 +144,6 @@ public class Poro extends JLabel implements ActionListener {
     private void resetPoroToIdle() {
         currentState = PoroState.Idling;
         updatePoroImage(PORO_IDLE);
-        this.timer.setDelay(8000);
         hasPointedInDirection = false;
     }
 
@@ -148,22 +168,35 @@ public class Poro extends JLabel implements ActionListener {
         walkDirection = (walkEndpoint < poroX)? -1:1;
     }
 
+    private void fallFromGravity() {
+        poroY += GRAVITY;
+        if(poroY > FLOOR) {
+            poroY = FLOOR;
+            currentState = PoroState.Idling;
+            updatePoroImage(PORO_IDLE);
+            return;
+        }
+        //TODO: Change to falling animation when possible
+        updatePoroLabel();
+    }
+
     @Override
     public void actionPerformed(ActionEvent e) {
-        System.out.println(currentState);
-        if(currentState == PoroState.Eating)
-            return;
-        else if (currentState == PoroState.Dragged) {
-            return;
-        }
-        else if(currentState == PoroState.Walking) {
-            walkTowardsPoint();
-            return;
+        switch (currentState) {
+            case Eating:
+                return;
+            case Dragged:
+                return;
+            case Falling:
+                fallFromGravity();
+                return;
+            case Walking:
+                walkTowardsPoint();
+                return;
         }
 
-        final int choice = rand.nextInt(10);
-        if(choice < 4) {
-            this.timer.setDelay(100);
+        final int choice = rand.nextInt(30);
+        if(choice < 1) {
             startWalkingSequence();
         }
     }
