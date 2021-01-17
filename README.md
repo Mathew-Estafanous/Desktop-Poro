@@ -87,10 +87,9 @@ Observe and learn from poro! | Watch as he walks across your screen and sends yo
   Getting Started
 </h2>
 
-1. Download the lates version from releases
-2. Run the ```Poro-Pet.exe``` file
-3. Poro should appear on your screen! View interactions in [Features](#Features)
+Download the lates version from releases and run the ```Poro-Pet.exe``` file.
 
+Poro should appear on your screen! View interactions in [Features](#Features)
 
 * If there are any issues, please [contact us](#Contributors) for troubleshooting!
 
