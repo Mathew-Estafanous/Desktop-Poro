@@ -12,7 +12,8 @@ public class Poro extends JLabel implements ActionListener {
     private PoroState currentState;
     private int walkEndpoint = 100;
     private int walkDirection = 0;
-    private int walkSpeed = 5;
+    private boolean hasPointedInDirection = false;
+    private final int walkSpeed = 5;
 
     private int poroX = 900;
     private int poroY = 800;
@@ -53,12 +54,14 @@ public class Poro extends JLabel implements ActionListener {
 
             @Override
             public void mouseEntered(MouseEvent e) {
+                hasPointedInDirection = false;
                 currentState = PoroState.Eating;
                 updatePoroImage("/static/Poro-Eat.gif");
             }
 
             @Override
             public void mouseExited(MouseEvent e) {
+                hasPointedInDirection = false;
                 currentState = PoroState.Idling;
                 updatePoroImage("/static/Poro-Idle.gif");
             }
@@ -104,21 +107,35 @@ public class Poro extends JLabel implements ActionListener {
     }
 
     private void walkTowardsPoint() {
+        pointPoroInWalkingDirection();
         poroX += walkSpeed * walkDirection;
         updatePoroLabel();
 
         //Checking if poro reached their final endpoint
         if(walkEndpoint < poroX && walkDirection > 0) {
-            System.out.println("DONE WALKING");
-            currentState = PoroState.Idling;
-            updatePoroImage("/static/Poro-Idle.gif");
-            this.timer.setDelay(8000);
+            resetPoroToIdle();
         } else if(walkEndpoint > poroX && walkDirection < 0) {
-            System.out.println("DONE WALKING");
-            currentState = PoroState.Idling;
-            updatePoroImage("/static/Poro-Idle.gif");
-            this.timer.setDelay(8000);
+            resetPoroToIdle();
         }
+    }
+
+    private void resetPoroToIdle() {
+        currentState = PoroState.Idling;
+        updatePoroImage("/static/Poro-Idle.gif");
+        this.timer.setDelay(8000);
+        hasPointedInDirection = false;
+    }
+
+    private void pointPoroInWalkingDirection() {
+        if(hasPointedInDirection)
+            return;
+
+        if(walkDirection < 0) {
+            updatePoroImage("/static/Poro-Walk-Left.gif");
+        } else {
+            updatePoroImage("/static/Poro-Walk-Right.gif");
+        }
+        hasPointedInDirection = true;
     }
 
     private void startWalkingSequence() {
@@ -127,17 +144,7 @@ public class Poro extends JLabel implements ActionListener {
         int maximumX = (int) (rect.getMaxX() - currentSize/2);
         walkEndpoint = rand.nextInt(maximumX) + minimumX;
 
-        if(walkEndpoint < poroX) {
-            //TODO: SET THIS ANIMATION TO WALK_LEFT;
-            System.out.println("LEFT");
-            updatePoroImage("/static/Poro-Walk-Left.gif");
-            walkDirection = -1;
-        } else {
-            //TODO: SET THIS ANIMATION TO WALK_RIGHT;
-            System.out.println("Right");
-            updatePoroImage("/static/Poro-Walk-Right.gif");
-            walkDirection = 1;
-        }
+        walkDirection = (walkEndpoint < poroX)? -1:1;
     }
 
     @Override
@@ -155,7 +162,7 @@ public class Poro extends JLabel implements ActionListener {
 
         final int choice = rand.nextInt(10);
         if(choice < 4) {
-            this.timer.setDelay(200);
+            this.timer.setDelay(100);
             startWalkingSequence();
         }
     }
