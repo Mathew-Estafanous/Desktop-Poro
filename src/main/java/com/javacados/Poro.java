@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.Random;
+import static com.javacados.PoroAnimations.*;
 
 public class Poro extends JLabel implements ActionListener {
 
@@ -29,7 +30,7 @@ public class Poro extends JLabel implements ActionListener {
     private final Rectangle rect;
 
     public Poro() {
-        this("/static/Poro-Idle.gif");
+        this(PORO_IDLE);
     }
 
     public Poro(String poroUrl) {
@@ -56,14 +57,14 @@ public class Poro extends JLabel implements ActionListener {
             public void mouseEntered(MouseEvent e) {
                 hasPointedInDirection = false;
                 currentState = PoroState.Eating;
-                updatePoroImage("/static/Poro-Eat.gif");
+                updatePoroImage(PORO_EAT);
             }
 
             @Override
             public void mouseExited(MouseEvent e) {
                 hasPointedInDirection = false;
                 currentState = PoroState.Idling;
-                updatePoroImage("/static/Poro-Idle.gif");
+                updatePoroImage(PORO_IDLE);
             }
         });
 
@@ -95,7 +96,7 @@ public class Poro extends JLabel implements ActionListener {
 
     public void growPoro() {
         currentSize += GROW_AMOUNT;
-        updatePoroImage("/static/Poro-Idle.gif");
+        updatePoroImage(PORO_EAT);
         if(this.currentSize > MAX_SIZE) {
             splitPoro();
         }
@@ -121,7 +122,7 @@ public class Poro extends JLabel implements ActionListener {
 
     private void resetPoroToIdle() {
         currentState = PoroState.Idling;
-        updatePoroImage("/static/Poro-Idle.gif");
+        updatePoroImage(PORO_IDLE);
         this.timer.setDelay(8000);
         hasPointedInDirection = false;
     }
@@ -131,9 +132,9 @@ public class Poro extends JLabel implements ActionListener {
             return;
 
         if(walkDirection < 0) {
-            updatePoroImage("/static/Poro-Walk-Left.gif");
+            updatePoroImage(PORO_WALK_LEFT);
         } else {
-            updatePoroImage("/static/Poro-Walk-Right.gif");
+            updatePoroImage(PORO_WALK_RIGHT);
         }
         hasPointedInDirection = true;
     }
