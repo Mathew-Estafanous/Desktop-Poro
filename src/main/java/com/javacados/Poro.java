@@ -49,6 +49,7 @@ public class Poro extends JLabel implements ActionListener {
                 .getBounds();
 
         FLOOR = (int) rect.getMaxY() - currentSize;
+        poroY = FLOOR;
         updatePoroImage(poroUrl);
         addMouseEventListener();
         this.timer.start();
