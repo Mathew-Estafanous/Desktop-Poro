@@ -86,11 +86,11 @@ Observe and learn from poro! | Watch as he walks across your screen and sends yo
 <h2 align = "center">
   Getting Started
 </h2>
-<ol>
-<li>Download the program from: ....</li>
-<li>Run the "Poro-Pet.exe file</li>
-<li>Poro should appear on your screen! View interactions in [Features](#Features)</li>
-   </ol>
+
+1. Download the program from: ....
+2. Run the "Poro-Pet.exe file
+3. Poro should appear on your screen! View interactions in [Features](#Features)
+
 
 * If there are any issues, please [contact us](#Contributors) for troubleshooting!
 
