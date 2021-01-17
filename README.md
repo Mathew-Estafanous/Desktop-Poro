@@ -90,6 +90,8 @@ Discord: Mathew E#1646
 
 <ins>**Ethan**</ins>
 
+Email: ethan@tower10labs.com
+
 Discord: Th33Ahn#3297
 
 <ins>**Olivia**</ins>
