@@ -5,5 +5,6 @@ public enum PoroState {
     Eating,
     Walking,
     Dragged,
-    Falling;
+    Falling,
+    Talking;
 }

@@ -16,6 +16,9 @@ public class Poro extends JLabel implements ActionListener {
     private boolean hasPointedInDirection = false;
     private final int WALK_SPEED = 2;
     private final int GRAVITY = 3;
+    private final int MESSAGE_COUNT = 250;
+    private final int PORO_MESSAGE_SCALE = 100;
+    private int messageCountdown;
 
     private int poroX = 900;
     private int poroY = 800;
@@ -55,15 +58,13 @@ public class Poro extends JLabel implements ActionListener {
         this.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                if(currentState == PoroState.Falling)
-                    return;
+                if (ensureNotInOtherStates()) return;
                 growPoro();
             }
 
             @Override
             public void mouseEntered(MouseEvent e) {
-                if(currentState == PoroState.Falling)
-                    return;
+                if (ensureNotInOtherStates()) return;
                 hasPointedInDirection = false;
                 currentState = PoroState.Eating;
                 updatePoroImage(PORO_EAT);
@@ -71,17 +72,19 @@ public class Poro extends JLabel implements ActionListener {
 
             @Override
             public void mouseExited(MouseEvent e) {
-                if(currentState == PoroState.Falling)
-                    return;
+                if (ensureNotInOtherStates()) return;
                 hasPointedInDirection = false;
                 currentState = PoroState.Idling;
                 updatePoroImage(PORO_IDLE);
             }
 
+            private boolean ensureNotInOtherStates() {
+                return currentState == PoroState.Falling || currentState == PoroState.Talking;
+            }
+
             @Override
             public void mouseReleased(MouseEvent e) {
                 if(poroY + currentSize < FLOOR) {
-                    System.out.println("FALLING");
                     currentState = PoroState.Falling;
                     updatePoroImage(PORO_IN_AIR);
                 } else {
@@ -191,6 +194,25 @@ public class Poro extends JLabel implements ActionListener {
         updatePoroLabel();
     }
 
+    private void sendMessageToUser() {
+        messageCountdown = MESSAGE_COUNT;
+        currentSize += PORO_MESSAGE_SCALE;
+
+        int msgChoice = rand.nextInt(PORO_MESSAGES.length);
+        System.out.println("Poro Chose to send: " + msgChoice);
+        updatePoroImage(PORO_MESSAGES[msgChoice]);
+        currentState = PoroState.Talking;
+    }
+
+    private void countDownTalking() {
+        messageCountdown -= 1;
+        if(messageCountdown <= 0) {
+            updatePoroImage(PORO_IDLE);
+            currentState = PoroState.Idling;
+            currentSize -= PORO_MESSAGE_SCALE;
+        }
+    }
+
     @Override
     public void actionPerformed(ActionEvent e) {
         switch (currentState) {
@@ -204,10 +226,15 @@ public class Poro extends JLabel implements ActionListener {
             case Walking:
                 walkTowardsPoint();
                 return;
+            case Talking:
+                countDownTalking();
+                return;
         }
 
-        final int choice = rand.nextInt(90);
-        if(choice < 1) {
+        final int choice = rand.nextInt(5000);
+        if(choice < 2) {
+            sendMessageToUser();
+        } else if(choice < 6) {
             startWalkingSequence();
         }
     }
