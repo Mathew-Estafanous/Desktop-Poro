@@ -81,6 +81,7 @@ Feed and grow your poro! | Click your poro. Your friend will grow with every cli
 Split your poro! | If you click your poro once he grows to a certain size, he will explode into multiple poros... but don't worry! Your poro will still be around, though reverted to his original size!
 Drag your poro! | Hold your mouse on your poro and move your cursor around!
 Drop your poro and watch him bounce! | Release your mouse while holding your poro in the air!
+Observe and learn from poro! | Watch as he walks across your screen and sends you messages!
 
 <h2 align = "center">
   Getting Started
