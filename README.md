@@ -69,8 +69,9 @@ these lonely times in quarantine. We hope you enjoy!
 ### Features
 Interaction | Instructions
 ----------- | ------------
-Feed your poro! | 
-Grow your poro! |
+Feed and grow your poro! | Click your poro. Your friend will grow with every click!
+Split your poro! | If you click your poro once it grows to a certain size, your friend will split into multiple poros and revert to its original size!
+Drag your poro! | Hold your mouse on your poro and move your cursor around!
 
 <h2 align = "center"> 
    Getting Started
