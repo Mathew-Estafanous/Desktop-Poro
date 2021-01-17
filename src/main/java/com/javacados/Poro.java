@@ -31,7 +31,7 @@ public class Poro extends JLabel implements ActionListener {
     private final Rectangle rect;
 
     public Poro() {
-        this("/static/Poro.gif");
+        this("/static/Poro-Idle.gif");
     }
 
     public Poro(String poroUrl) {
@@ -63,7 +63,7 @@ public class Poro extends JLabel implements ActionListener {
             @Override
             public void mouseExited(MouseEvent e) {
                 currentState = PoroState.Idling;
-                updatePoroImage("/static/Poro.gif");
+                updatePoroImage("/static/Poro-Idle.gif");
             }
         });
     }
@@ -83,7 +83,7 @@ public class Poro extends JLabel implements ActionListener {
 
     public void growPoro() {
         currentSize += GROW_AMOUNT;
-        updatePoroImage("/static/Poro.gif");
+        updatePoroImage("/static/Poro-Idle.gif");
         if(this.currentSize > MAX_SIZE) {
             splitPoro();
         }
@@ -102,10 +102,12 @@ public class Poro extends JLabel implements ActionListener {
         if(walkEndpoint < poroX && walkDirection > 0) {
             System.out.println("DONE WALKING");
             currentState = PoroState.Idling;
+            updatePoroImage("/static/Poro-Idle.gif");
             this.timer.setDelay(8000);
         } else if(walkEndpoint > poroX && walkDirection < 0) {
             System.out.println("DONE WALKING");
             currentState = PoroState.Idling;
+            updatePoroImage("/static/Poro-Idle.gif");
             this.timer.setDelay(8000);
         }
     }
@@ -119,12 +121,12 @@ public class Poro extends JLabel implements ActionListener {
         if(walkEndpoint < poroX) {
             //TODO: SET THIS ANIMATION TO WALK_LEFT;
             System.out.println("LEFT");
-            updatePoroImage("/static/Poro.gif");
+            updatePoroImage("/static/Poro-Walk-Left.gif");
             walkDirection = -1;
         } else {
             //TODO: SET THIS ANIMATION TO WALK_RIGHT;
             System.out.println("Right");
-            updatePoroImage("/static/Poro.gif");
+            updatePoroImage("/static/Poro-Walk-Right.gif");
             walkDirection = 1;
         }
     }
