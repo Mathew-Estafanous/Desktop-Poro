@@ -87,9 +87,11 @@ Observe and learn from poro! | Watch as he walks across your screen and sends yo
   Getting Started
 </h2>
 
-Download the lates version from releases and run the ```Poro-Pet.exe``` file.
+Download the latest version from releases and run the ```Poro-Pet.exe``` file.
 
 Poro should appear on your screen! View interactions in [Features](#Features)
+
+To close the program, select the Java window in the taskbar and close the window from there.
 
 * If there are any issues, please [contact us](#Contributors) for troubleshooting!
 
