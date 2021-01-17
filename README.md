@@ -13,7 +13,6 @@
 * [About The Project](#About-The-Project)
     * [Purpose](#Purpose)
     * [Features](#Features)
-    * [Sources](#Sources)
 * [Getting Started](#Getting-Started)
 * [License](#License)
 * [Contact](#Contact)
@@ -36,7 +35,7 @@ alone? Well fret not! This poro will bring you joy and company when you need it!
 been  applied  as effective  applications  to  promote  user’s  physical  and psychological
 health  (e.g.,  healthy  eating  [Byrne  et  al.  2012], asthma  self-management
 [Lee  et  al.  2010],  increasing  social interaction  [Pering  2002],  and  learning
-social  norms  and behavior [Hildmann et al. 2008])
+social  norms  and behavior [Hildmann et al. 2008]) [Source](https://www.researchgate.net/publication/320743787_Beyond_cute_exploring_user_types_and_design_opportunities_of_virtual_reality_pet_games)
 
 This project was created to provide users with a virtual companion to alleviate their
 emotional states, especially in times of distress. Having to work alone in front of a 
@@ -72,10 +71,6 @@ Interaction | Instructions
 ----------- | ------------
 Feed your poro! | 
 Grow your poro! |
-
-
-### Sources
-https://www.researchgate.net/publication/320743787_Beyond_cute_exploring_user_types_and_design_opportunities_of_virtual_reality_pet_games
 
 <h2 align = "center"> 
    Getting Started
