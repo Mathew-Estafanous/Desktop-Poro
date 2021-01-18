@@ -17,7 +17,7 @@ public class Poro extends JLabel implements ActionListener {
     private final int WALK_SPEED = 2;
     private final int GRAVITY = 3;
     private final int MESSAGE_COUNT = 250;
-    private final int PORO_MESSAGE_SCALE = 100;
+    private final int PORO_MESSAGE_SCALE = 2;
     private int messageCountdown;
 
     private int poroX = 900;
@@ -48,7 +48,7 @@ public class Poro extends JLabel implements ActionListener {
                 .getDefaultConfiguration()
                 .getBounds();
 
-        FLOOR = (int) rect.getMaxY() - currentSize;
+        FLOOR = (int) rect.getMaxY() - currentSize/2;
         poroY = FLOOR;
         updatePoroImage(poroUrl);
         addMouseEventListener();
@@ -197,7 +197,7 @@ public class Poro extends JLabel implements ActionListener {
 
     private void sendMessageToUser() {
         messageCountdown = MESSAGE_COUNT;
-        currentSize += PORO_MESSAGE_SCALE;
+        currentSize *= PORO_MESSAGE_SCALE;
 
         int msgChoice = rand.nextInt(PORO_MESSAGES.length);
         System.out.println("Poro Chose to send: " + msgChoice);
@@ -208,9 +208,9 @@ public class Poro extends JLabel implements ActionListener {
     private void countDownTalking() {
         messageCountdown -= 1;
         if(messageCountdown <= 0) {
+            currentSize /= PORO_MESSAGE_SCALE;
             updatePoroImage(PORO_IDLE);
             currentState = PoroState.Idling;
-            currentSize -= PORO_MESSAGE_SCALE;
         }
     }
 
@@ -233,9 +233,9 @@ public class Poro extends JLabel implements ActionListener {
         }
 
         final int choice = rand.nextInt(5000);
-        if(choice < 2) {
+        if(choice < 3) {
             sendMessageToUser();
-        } else if(choice < 6) {
+        } else if(choice < 7) {
             startWalkingSequence();
         }
     }
