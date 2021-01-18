@@ -16,6 +16,7 @@ public class Poro extends JLabel implements ActionListener {
     private boolean hasPointedInDirection = false;
     private final int WALK_SPEED = 2;
     private final int GRAVITY = 3;
+    private final int FRICTION = 1;
     private final int MESSAGE_COUNT = 250;
     private final int PORO_MESSAGE_SCALE = 2;
     private int messageCountdown;
@@ -23,6 +24,7 @@ public class Poro extends JLabel implements ActionListener {
     private int poroX = 900;
     private int poroY = 800;
 
+    private int velX = 0;
     private int velY = 0;
 
     private int currentSize = 100;
@@ -99,13 +101,14 @@ public class Poro extends JLabel implements ActionListener {
         this.addMouseMotionListener(new MouseMotionAdapter() {
             @Override
             public void mouseDragged(MouseEvent e) {
-                if(currentState != PoroState.Dragged)
+                if (currentState != PoroState.Dragged) {
                     updatePoroImage(PORO_IN_AIR);
+                }
                 currentState = PoroState.Dragged;
-                int mouseX = e.getX();
-                int mouseY = e.getY();
-                poroX += mouseX - currentSize / 3;
-                poroY += mouseY - 10;
+                velX = e.getX();
+                velY = e.getY();
+                poroX += velX;
+                poroY += velY;
                 updatePoroLabel();
             }
         });
@@ -178,8 +181,18 @@ public class Poro extends JLabel implements ActionListener {
     }
 
     private void fallFromGravity() {
+        poroX += velX;
         velY += GRAVITY;
         poroY += velY;
+        int minimumX = currentSize/2;
+        int maximumX = (int) (rect.getMaxX() - currentSize/2);
+        int minimumY = currentSize/2;
+        if (poroX <= minimumX || poroX >= maximumX) {
+            velX *= -1;
+        }
+        if (poroY < minimumY) {
+            velY *= -1;
+        }
         if(poroY > FLOOR) {
             poroY = FLOOR;
             if (velY >= 15) {
@@ -187,9 +200,15 @@ public class Poro extends JLabel implements ActionListener {
                 velY *= -0.85;
             } else {
                 velY = 0;
-                currentState = PoroState.Idling;
-                updatePoroImage(PORO_IDLE);
-                return;
+                if (velX < 0) {
+                    velX += FRICTION;
+                } else if (velX > 0) {
+                    velX -= FRICTION;
+                } else {
+                    currentState = PoroState.Idling;
+                    updatePoroImage(PORO_IDLE);
+                    return;
+                }
             }
         }
         updatePoroLabel();
@@ -219,7 +238,6 @@ public class Poro extends JLabel implements ActionListener {
         switch (currentState) {
             case Eating:
             case Dragged:
-                velY = 0;
                 return;
             case Falling:
                 fallFromGravity();
