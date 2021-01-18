@@ -27,7 +27,7 @@ public class Poro extends JLabel implements ActionListener {
     private double velX = 0;
     private int velY = 0;
 
-    private double friction = 0.5;
+    private double friction = 0.3;
 
     private int currentSize = 100;
 
