@@ -27,7 +27,7 @@ public class Poro extends JLabel implements ActionListener {
     private double velX = 0;
     private int velY = 0;
 
-    private double friction = 0.3;
+    private double friction = 0.2;
 
     private int currentSize = 100;
 
@@ -198,7 +198,7 @@ public class Poro extends JLabel implements ActionListener {
             velX = 0;
         }
         if (poroX <= minimumX || poroX >= maximumX) {
-            velX *= -1;
+            velX *= -0.85;
         }
         if (poroY < minimumY) {
             velY *= -1;
