@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.Random;
+import java.lang.Math;
 import static com.javacados.PoroAnimations.*;
 
 public class Poro extends JLabel implements ActionListener {
@@ -16,7 +17,6 @@ public class Poro extends JLabel implements ActionListener {
     private boolean hasPointedInDirection = false;
     private final int WALK_SPEED = 2;
     private final int GRAVITY = 3;
-    private final int FRICTION = 1;
     private final int MESSAGE_COUNT = 250;
     private final int PORO_MESSAGE_SCALE = 2;
     private int messageCountdown;
@@ -24,8 +24,10 @@ public class Poro extends JLabel implements ActionListener {
     private int poroX = 900;
     private int poroY = 800;
 
-    private int velX = 0;
+    private double velX = 0;
     private int velY = 0;
+
+    private double friction = 0.5;
 
     private int currentSize = 100;
 
@@ -181,34 +183,40 @@ public class Poro extends JLabel implements ActionListener {
     }
 
     private void fallFromGravity() {
-        poroX += velX;
-        velY += GRAVITY;
-        poroY += velY;
         int minimumX = currentSize/2;
         int maximumX = (int) (rect.getMaxX() - currentSize/2);
         int minimumY = currentSize/2;
+        poroX += velX;
+        velY += GRAVITY;
+        poroY += velY;
+        if (velX < 0.01) {
+            velX += friction;
+        } else if (velX > 0.1) {
+            velX -= friction;
+        }
+        if (Math.abs(velX) < friction) {
+            velX = 0;
+        }
         if (poroX <= minimumX || poroX >= maximumX) {
             velX *= -1;
         }
         if (poroY < minimumY) {
             velY *= -1;
         }
-        if(poroY > FLOOR) {
+        if(poroY >= FLOOR) {
             poroY = FLOOR;
             if (velY >= 15) {
                 updatePoroImage(PORO_LAND);
                 velY *= -0.85;
             } else {
                 velY = 0;
-                if (velX < 0) {
-                    velX += FRICTION;
-                } else if (velX > 0) {
-                    velX -= FRICTION;
-                } else {
-                    currentState = PoroState.Idling;
-                    updatePoroImage(PORO_IDLE);
-                    return;
-                }
+                friction = 2;
+            }
+            if (velX == 0 && velY == 0) {
+                friction = 0.2; // Reverts back to original (air resistance) friction
+                currentState = PoroState.Idling;
+                updatePoroImage(PORO_IDLE);
+                return;
             }
         }
         updatePoroLabel();
