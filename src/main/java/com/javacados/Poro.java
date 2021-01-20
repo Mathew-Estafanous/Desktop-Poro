@@ -22,7 +22,7 @@ public class Poro extends JLabel implements ActionListener {
     private int messageCountdown;
 
     private int poroX = 900;
-    private int poroY = 800;
+    private int poroY;
 
     private double velX = 0;
     private int velY = 0;
@@ -109,8 +109,8 @@ public class Poro extends JLabel implements ActionListener {
                 currentState = PoroState.Dragged;
                 velX = e.getX();
                 velY = e.getY();
-                poroX += velX;
-                poroY += velY;
+                poroX += velX - currentSize/4;
+                poroY += velY - currentSize/4;
                 updatePoroLabel();
             }
         });
